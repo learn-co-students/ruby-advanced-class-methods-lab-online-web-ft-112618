@@ -53,7 +53,7 @@ class Song
     self.all.sort_by{|song| song.name }
   end
 
-def self.new_from_filename(name)
+def self.new_from_filename(name)    # "Taylor Swift - Blank Space.mp3"
 
   artist_name = name.split(/\s-\s|\./)[0]
   song_name = name.split(/\s-\s|\./)[1] # gsub(".mp3", "")
